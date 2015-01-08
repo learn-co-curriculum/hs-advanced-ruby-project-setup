@@ -8,18 +8,25 @@ languages: ruby, html, css
 We will be using the Sinatra web framework to create a web application. Practice your command line skills by building out the MVC file structure below with mkdir and touch. We've also included a quick summary of what each of those directories and files is used for at the bottom of the page. 
 
 ```bash
-hs-mvc-interactive-practice
-├── models
-│   └── sample_model.rb
+project-fwitter
+├── app
+│   ├── controllers
+│   │   └── application_controller.rb
+│   ├── models
+│   │   └── tweet.rb
+│   └── views
+│       └── tweets.erb
+├── config
+│   └── environment.rb
 ├── public
-│   └── stylesheets
-├── views
-│   └── index.erb
-├── application_controller.rb
+│   └── css
+│       └── style.css
 ├── config.ru
 ├── Gemfile
 └── README.md
 ```
+
+### `app` directory
 
 ### `models` directory
 
