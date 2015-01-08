@@ -28,28 +28,35 @@ project-fwitter
 
 ### `app` directory
 
-### `models` directory
+This folder holds our MVC directories.
 
-This folder holds the logic behind your program. If you were building facebook you would save your user.rb file with a User class in this directory.
+#### `controllers` directory
 
-#### `public` directory
+This folder holds our application controller file - `application_controller.rb`. Our application controller will be responsible for finding the appropriate views (.erb files with HTML/CSS and embedded Ruby) for each page that the user visits and the correct models (the Ruby code when the applications needs to interact with the database).
 
-The `public` directory holds our front-end assets. In the example above, it holds a `stylesheets` directory where all of our stylesheets are located. Javascript directories and any other front-end assets (like image files) would be stored in `public` as well.
+#### `models` directory
 
-### `views` directory
-In a Sinatra app we use .erb files instead of .html files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. 
+This folder holds the logic (Ruby code) behind our application. We'll start out with just a `tweet.rb` file with a Tweet class for now. This tweet class will be used to create new instances of tweets and to eventually interact with the database.
 
-#### `application_controller.rb` file
+#### `views` directory
 
-Our `application_controller.rb` inherits from `Sinatra::Base`, which means it inherits all kinds of functionality from the Sinatra gem. This includes the ability to set up routes that correspond to URLs and to display the appropriate .erb files (with HTML/CSS and embedded Ruby) in the browser. 
+This directory holds the code that will be displayed in the browser. In a Sinatra app we use .erb files instead of .html files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. We'll start out with just one file `tweets.erb` which will display the tweets we create.
 
-#### `config.ru` file
+### `config` directory
 
-A `config.ru` file is necessary if you are using a deployment tool such as `shotgun` (see `Gemfile`). It specifies to our app handler what files should be run in order to initialize a new instance of our Sinatra application.
+This directory holds an `environment.rb` file. We'll be using this file to connect up all the files in our application to the appropriate gems and to each other.
 
-#### `Gemfile`
+### `public` directory
 
-This holds a list of all the gems needed to run the application. For example, we need the `shotgun` gem to get a server started on our computer. All of the gems in a Gemfile can be downloaded by running the command `bundle install` from our terminal.
+The `public` directory holds our front-end assets. In the example above, it holds a `css` directory with a stylesheet. Javascript directories and any other front-end assets (like image files) should also be stored in `public`.
+
+### `config.ru` file
+
+A `config.ru` file is necessary if you are using a deployment tool such as `rackup` (the ru stands for rackup) to start up a server. It specifies where to find the application controller so that a new instance of our Sinatra application can be initialized.
+
+### `Gemfile`
+
+This holds a list of all the gems needed to run the application. For example, we'll be using the `pry` gem to test out and debug our application. All of the gems in a Gemfile can be downloaded by running the command `bundle install` from our terminal.
 
 
 
