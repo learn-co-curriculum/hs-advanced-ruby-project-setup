@@ -1,7 +1,4 @@
----
-tags: kids, advanced
-languages: ruby, html, css
----
+
 
 ## Sinatra Application Setup
 
