@@ -12,7 +12,7 @@ project-fwitter
 │   ├── models
 │   │   └── tweet.rb
 │   └── views
-│       └── tweets.erb
+│       └── index.erb
 ├── config
 │   └── environment.rb
 ├── public
@@ -37,7 +37,7 @@ This folder holds the logic (Ruby code) behind our application. We'll start out 
 
 #### `views` directory
 
-This directory holds the code that will be displayed in the browser. In a Sinatra app we use .erb files instead of .html files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. We'll start out with just one file `tweets.erb` which will display the tweets we create.
+This directory holds the code that will be displayed in the browser. In a Sinatra app we use .erb files instead of .html files because .erb files allow us to include regular, old HTML tags AND special erb tags which contain Ruby code. We'll start out with just one file `index.erb` which will display the tweets we create.
 
 ### `config` directory
 
