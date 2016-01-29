@@ -60,4 +60,4 @@ This holds a list of all the gems needed to run the application. For example, we
 
 
 
-<a href='https://learn.co/lessons/hs-advanced-ruby-project-setup' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-advanced-ruby-project-setup' title='Sinatra Application Setup'>Sinatra Application Setup</a> on Learn.co and start learning to code for free.</p>
